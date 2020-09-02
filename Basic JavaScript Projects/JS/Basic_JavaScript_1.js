@@ -23,3 +23,6 @@ function My_First_Function() {                                  //Defining a fun
     document.getElementById("Green_Text").innerHTML = result;   //Putting the value
 }                                                               //of result into HTML element with "Green_Text" id
 
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+}
