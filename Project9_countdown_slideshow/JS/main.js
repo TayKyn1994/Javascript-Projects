@@ -1,5 +1,5 @@
 function countdown() {
-    var seconds = document.getElementById("seconds").value;
+    var seconds = document.getElementById("seconds").value; // this code is for the countdown timer, enter a number (5 for example) and it will countdown to zero and an alert window will pop up
 
     function tick() {
         seconds = seconds - 1;
@@ -12,7 +12,7 @@ function countdown() {
     tick();
 }
 
-var slideIndex = 1;
+var slideIndex = 1;     // this and the following code is for the slideshow
 showSlides(slideIndex);
 
 function plusSlides(n) {
