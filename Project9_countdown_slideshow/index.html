@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+</head>
+<body>
+    <p>How many seconds would you like to set your alarm for?</p>
+        <input id="seconds" value=""?>
+        <button onclick="countdown()">Click here</button>
+        <p id="timer"></p>
+        
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+                <img src="Photos/pic1.jpeg" style="width:100%">
+            <div class="text">First Photo</div>
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+                <img src="Photos/pic2.jpg" style="width:100%">
+            <div class="text">Second Photo</div>
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+                <img src="Photos/pic3.jpg" style="width:100%; object-fit:cover;">
+            <div class="text">Third Photo</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    <script src="JS/main.js"></script>
+</body>
+</html>
