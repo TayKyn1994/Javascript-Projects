@@ -69,7 +69,7 @@ function myFunction() {             // how to use RETURN function
   }
   document.getElementById("Car_Object").innerHTML = car.description();
 
-function myFunction() {
+function myFunction() {     //break function
     var text = "";
     var i;
     for (i = 0; i < 5; i++) {
@@ -81,7 +81,7 @@ function myFunction() {
     document.getElementById("demo").innerHTML = text;
 }
 
-function myFunction() {
+function myFunction() { // continue function, skips the number 3 
     var text = "";
     var i;
     for (i = 0; i < 5; i++) {
