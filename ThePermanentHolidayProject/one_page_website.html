@@ -50,39 +50,48 @@ body {
 			</div>
 		</div>
 		<!-- END HOME -->
-		
-		<!-- GALLERY -->
-		<section>
-			<div id="gallery">
-				<h1>Gallery</h1>
-				<div>
-					
-					<!-- PHOTO-CONTAINER 1 -->
-					<div>
-						<div>
-						<img src="./BoatImages/boat_1.jpg" alt="Photo of monohull sailboat." width="500" height="400">
-							<div>
-								<p>We have several monohull sailboats departing daily, book your ride today!</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 1 -->
-					
-					<!-- PHOTO-CONTAINER 2 -->
-					<div>
-						<div>
-							<img src="./BoatImages/boat_2.jpg" alt="Photo of catamaran sailboat." width="500" height="400">
-							<div>
-								<p>We have several catamaran sailboats departing daily, book your ride today!</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 2 -->
-					
+		<h2 style="text-align:center">Your options:</h2>
+
+		<div class="row">
+			<div class="column">
+				<img src="BoatImages/boat_1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+				<img src="BoatImages/boat_2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+			</div>
+		</div>
+
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="mySlides">
+				<div class="numbertext">1 / 2</div>
+				<img src="BoatImages/boat_1.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+				<div class="numbertext">2 / 2</div>
+				<img src="BoatImages/boat_2.jpg" style="width:100%">
+				</div>
+				
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<div class="caption-container">
+				<p id="caption"></p>
+				</div>
+
+				<div class="column">
+				<img class="demo cursor" src="BoatImages/boat_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="This is a monohull sailboat! Call or email now to book a ride.">
+				</div>
+				<div class="column">
+				<img class="demo cursor" src="BoatImages/boat_2.jpg" style="width:100%" onclick="currentSlide(2)" alt="This is a catamaran sailboat! Call or email now to book a ride.">
 				</div>
 			</div>
-		</section>
-		<!-- END GALLERY -->
+		</div>
+
+					
 		
 		<!-- RSVP -->
 		<section>
@@ -121,7 +130,7 @@ body {
 					www.rideaboat.sail &nbsp;|&nbsp; &copy; 2020
 				</div>
 				<!-- END FOOTER -->
-				
+				<script src="JS/one_page_website.js"></script>
 			</body>
 		</html>
 		
